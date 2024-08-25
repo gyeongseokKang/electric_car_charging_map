@@ -1,6 +1,6 @@
 export default async function StationPage() {
   const data: any = await fetch(
-    "https://api.odcloud.kr/api/EvInfoServiceV2/v1/getEvSearchList?page=1&perPage=2&cond%5Baddr%3A%3ALIKE%5D=강남구&serviceKey=서비스키",
+    `${process.env.NEXT_PUBLIC_EV_CHARGING_API}/v1/getEvSearchList?page=1&perPage=2&cond%5Baddr%3A%3ALIKE%5D=강남구&serviceKey=${process.env.NEXT_PUBLIC_EV_CHARGING_API_KEY}`,
     {
       method: "GET",
       headers: {
