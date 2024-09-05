@@ -20,6 +20,6 @@ test.describe("라우팅 테스트", () => {
     // 즐겨찾기 버튼 클릭
     await favoriteButton.click();
     // 새로운 URL이 '/favorite'인지 확인
-    await expect(page).toHaveURL("http://localhost:3000/favorite");
+    await expect(page).toHaveURL("http://localhost:3000/best");
   });
 });
