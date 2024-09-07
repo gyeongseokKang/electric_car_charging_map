@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+[![Playwright Tests](https://github.com/gyeongseokKang/electric_car_charging_map/actions/workflows/playwright.yml/badge.svg)](https://github.com/gyeongseokKang/electric_car_charging_map/actions/workflows/playwright.yml)
 
 ## Getting Started
 
