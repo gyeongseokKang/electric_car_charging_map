@@ -51,7 +51,14 @@ const 충전소리스트컴포넌트 = ({ address }: { address: string }) => {
       <h2>검색결과</h2>
       <div className="flex w-full gap-1 flex-wrap">
         {data.map((station) => {
-          return <StationCard key={station.cpId} {...station} />;
+          return (
+            <StationCard
+              key={station.cpId}
+              {...station}
+              getLocation={station.getLocation}
+              isAvailable={station.isAvailable}
+            />
+          );
         })}
       </div>
     </>
@@ -67,7 +74,14 @@ const 즐겨찾기리스트컴포넌트 = () => {
       <h2>즐겨찾기</h2>
       <div className="flex w-full gap-1 flex-wrap ">
         {favoriteStationList.map((station) => {
-          return <StationCard key={station.cpId} {...station} />;
+          return (
+            <StationCard
+              key={station.cpId}
+              {...station}
+              getLocation={station.getLocation}
+              isAvailable={station.isAvailable}
+            />
+          );
         })}
       </div>
     </>
